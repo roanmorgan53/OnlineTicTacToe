@@ -1,0 +1,14 @@
+body {
+    background-color: #282828;
+    color: #E4E6EB;
+    text-align: center;
+}
+
+h1 {
+
+}
+
+body .header {
+    padding-top: 10px;
+    size: 40px;
+}
