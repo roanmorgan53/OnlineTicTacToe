@@ -36,6 +36,8 @@ function updateGraphic(){
     document.getElementById("btn7").innerHTML = board[2][0];
     document.getElementById("btn8").innerHTML = board[2][1];
     document.getElementById("btn9").innerHTML = board[2][2];
+
+    console.log(checkWin(board));
 }
 
 function btn1Pressed(){
@@ -109,4 +111,44 @@ function btn9Pressed(){
         turn = !turn;
         
     }
+}
+
+function checkWin(board) {
+    // Check rows
+    for (let i = 0; i < 3; i++) {
+        if(board[i][0] == "" || board[i][1] == "" || board[i][2] == ""){
+            
+        }
+        else if(board[i][0] === board[i][1] && board[i][1] === board[i][2]) {
+            return true;
+        }
+    }
+
+    // Check columns
+    for (let i = 0; i < 3; i++) {
+        if(board[0][i] == "" || board[1][i] == "" || board[2][i] == ""){
+            
+        }
+        else if(board[0][i] === board[1][i] && board[1][i] === board[2][i]) {
+            return true;
+        }
+    }
+
+    // Check diagonals
+    if(board[0][0] == "" || board[1][1] == "" || board[2][2] == ""){
+            
+    }
+    else if (board[0][0] === board[1][1] && board[1][1] === board[2][2]){
+        return true;
+    }
+
+    if(board[0][2] == "" || board[1][1] == "" || board[1][1] == "" || board[2][0] == ""){
+            
+    }
+    else if (board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
+        return true;
+    }
+
+    // If no win is found
+    return null;
 }
