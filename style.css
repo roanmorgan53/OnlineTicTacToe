@@ -7,19 +7,22 @@ body {
     width: 100vw;
     height: 100vh;
 
+    overflow: hidden;
+
 }
 
 body .header {
-    padding-top: 2%;
     font-size: 5vw;
     font-style: italic;
     text-decoration: underline;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 body .main {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 2%;
     text-align: justify;
 }
 
@@ -27,10 +30,6 @@ body h2 {
     padding-top: 2%;
     font-size: 140%;
     color: #B0B3B8;
-}
-
-.players {
-    padding-top: 2%;
 }
 
 .players button {
@@ -91,8 +90,6 @@ body h2 {
     clear:none;
 
     font-size: 5vw;
-
-    filter: drop-shadow(0.25rem 0.25rem 1rem rgb(255, 255, 255));
 
 }
 

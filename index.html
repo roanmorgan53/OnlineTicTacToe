@@ -5,31 +5,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
     rel="stylesheet">
+<script src="game.js"></script>
 
 
 <title>Tic Tac Toes!</title>
 
 <body>
-
     <h1 class="header">Online TicTacToe!</h1>
     <div class="game">
 
         <div class="players"> <!--x, o, reset, and spectator-->
-            <button id="btnX" style="color:red">Player 1</button>
-            <button id="btnR">Reset</button>
-            <button id="btnO" style="color:blue">Player 2</button>
+            <button id="btnX" onclick="setPlayer(true)" style="color:red">Player 1</button>
+            <button id="btnR" onclick="resetBoard()">Reset</button>
+            <button id="btnO" onclick="setPlayer(false)" style="color:blue">Player 2</button>
         </div>
 
         <div class="game-window">
-            <button id="btn1"></button>
-            <button id="btn2"></button>
-            <button id="btn3"></button>
-            <button id="btn4"></button>
-            <button id="btn5"></button>
-            <button id="btn6"></button>
-            <button id="btn7"></button>
-            <button id="btn8"></button>
-            <button id="btn9"></button>
+            <button id="btn1" onclick="btn1Pressed()"></button>
+            <button id="btn2" onclick="btn2Pressed()"></button>
+            <button id="btn3" onclick="btn3Pressed()"></button>
+            <button id="btn4" onclick="btn4Pressed()"></button>
+            <button id="btn5" onclick="btn5Pressed()"></button>
+            <button id="btn6" onclick="btn6Pressed()"></button>
+            <button id="btn7" onclick="btn7Pressed()"></button>
+            <button id="btn8" onclick="btn8Pressed()"></button>
+            <button id="btn9" onclick="btn9Pressed()"></button>
         </div>
     </div>
     <!--actual game goes here, not too sure how to do that-->
